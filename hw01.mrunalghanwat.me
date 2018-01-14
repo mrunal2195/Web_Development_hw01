@@ -1,0 +1,13 @@
+server {
+    listen 80;
+
+    root /var/www/hw01.mrunalghanwat.me/html;
+    index index.html index.htm;
+
+    server_name hw01.mrunalghanwat.me;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
